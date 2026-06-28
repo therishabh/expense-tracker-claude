@@ -51,5 +51,15 @@ def delete_expense(id):
     return "Delete expense — coming in Step 9"
 
 
+@app.route("/privacy-policy")
+def privacy():
+    return render_template("privacy.html")
+
+
+@app.route("/terms-and-conditions")
+def terms():
+    return render_template("terms.html")
+
+
 if __name__ == "__main__":
     app.run(debug=True, port=5001)

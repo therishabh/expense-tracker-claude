@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+
+{% block title %}Terms &amp; Conditions — Spendly{% endblock %}
+
+{% block content %}
+
+<section class="legal-section">
+    <div class="legal-inner">
+        <div class="legal-header">
+            <h1 class="legal-title">Terms &amp; Conditions</h1>
+            <p class="legal-date">Last updated: June 29, 2026</p>
+        </div>
+
+        <div class="legal-body">
+            <p>Please read these Terms &amp; Conditions carefully before using Spendly. By creating an account or using the service, you agree to be bound by these terms.</p>
+
+            <h2>1. Acceptance of Terms</h2>
+            <p>By accessing or using Spendly, you confirm that you are at least 13 years old and that you accept these Terms &amp; Conditions in full. If you do not agree, you must not use the service.</p>
+
+            <h2>2. Description of Service</h2>
+            <p>Spendly is a personal expense-tracking web application that allows registered users to log, categorise, and review their spending. The service is provided "as is" for personal, non-commercial use.</p>
+
+            <h2>3. User Accounts</h2>
+            <ul>
+                <li>You are responsible for maintaining the confidentiality of your account credentials.</li>
+                <li>You are responsible for all activity that occurs under your account.</li>
+                <li>You must notify us immediately of any unauthorised use of your account.</li>
+                <li>One person may not create more than one account.</li>
+            </ul>
+
+            <h2>4. User Conduct</h2>
+            <p>You agree not to:</p>
+            <ul>
+                <li>Use the service for any unlawful purpose or in violation of any applicable regulations.</li>
+                <li>Attempt to gain unauthorised access to any part of the service or its related systems.</li>
+                <li>Upload or transmit viruses, malware, or any other malicious code.</li>
+                <li>Scrape, crawl, or otherwise automate access to the service without prior written consent.</li>
+            </ul>
+
+            <h2>5. Your Data</h2>
+            <p>You retain ownership of the expense data you enter into Spendly. We do not claim any intellectual property rights over your data. You may export or delete your data at any time. See our <a href="{{ url_for('privacy') }}">Privacy Policy</a> for full details on how we handle your information.</p>
+
+            <h2>6. Intellectual Property</h2>
+            <p>All content, design, code, and trademarks that are part of Spendly (excluding your data) are owned by or licensed to us. You may not reproduce, distribute, or create derivative works without our prior written consent.</p>
+
+            <h2>7. Disclaimer of Warranties</h2>
+            <p>Spendly is provided on an "as is" and "as available" basis without warranties of any kind, either express or implied. We do not warrant that the service will be uninterrupted, error-free, or free of harmful components.</p>
+
+            <h2>8. Limitation of Liability</h2>
+            <p>To the fullest extent permitted by law, Spendly shall not be liable for any indirect, incidental, special, or consequential damages arising from your use of, or inability to use, the service.</p>
+
+            <h2>9. Termination</h2>
+            <p>We reserve the right to suspend or terminate your account at any time if you breach these Terms. You may delete your account at any time through your profile settings.</p>
+
+            <h2>10. Changes to These Terms</h2>
+            <p>We may revise these Terms at any time. Continued use of the service after changes are posted constitutes your acceptance of the revised Terms.</p>
+
+            <h2>11. Governing Law</h2>
+            <p>These Terms are governed by the laws of India. Any disputes shall be subject to the exclusive jurisdiction of the courts located in India.</p>
+
+            <h2>12. Contact Us</h2>
+            <p>If you have any questions about these Terms, please contact us at <a href="mailto:legal@spendly.app">legal@spendly.app</a>.</p>
+        </div>
+
+        <div class="legal-footer-nav">
+            <a href="{{ url_for('privacy') }}">← Privacy Policy</a>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

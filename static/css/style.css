@@ -507,6 +507,23 @@ a { color: inherit; text-decoration: none; }
     color: var(--ink-faint);
 }
 
+.footer-links {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.25rem;
+    font-size: 0.75rem;
+}
+
+.footer-links a {
+    color: var(--ink-faint);
+    transition: color 0.2s;
+}
+
+.footer-links a:hover { color: var(--paper); }
+
+.footer-divider { color: var(--ink-muted); }
+
 /* ------------------------------------------------------------------ */
 /* Responsive                                                          */
 /* ------------------------------------------------------------------ */
@@ -528,3 +545,82 @@ a { color: inherit; text-decoration: none; }
     .nav-links a:not(.nav-cta) { display: none; }
     .hero { padding: 3rem 1rem 2rem; }
 }
+
+/* ------------------------------------------------------------------ */
+/* Legal pages (Privacy Policy & Terms)                                */
+/* ------------------------------------------------------------------ */
+
+.legal-section {
+    padding: 4rem 2rem 6rem;
+}
+
+.legal-inner {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.legal-header {
+    margin-bottom: 2.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.legal-title {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 4vw, 3rem);
+    color: var(--ink);
+    margin-bottom: 0.4rem;
+}
+
+.legal-date {
+    font-size: 0.85rem;
+    color: var(--ink-faint);
+}
+
+.legal-body {
+    color: var(--ink-soft);
+    line-height: 1.8;
+}
+
+.legal-body p {
+    margin-bottom: 1.1rem;
+}
+
+.legal-body h2 {
+    font-family: var(--font-display);
+    font-size: 1.2rem;
+    color: var(--ink);
+    margin-top: 2.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.legal-body ul {
+    padding-left: 1.4rem;
+    margin-bottom: 1.1rem;
+}
+
+.legal-body ul li {
+    margin-bottom: 0.4rem;
+    font-size: 0.95rem;
+}
+
+.legal-body a {
+    color: var(--accent);
+    font-weight: 500;
+}
+
+.legal-body a:hover { text-decoration: underline; }
+
+.legal-footer-nav {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    font-size: 0.9rem;
+}
+
+.legal-footer-nav a {
+    color: var(--accent);
+    font-weight: 500;
+}
+
+.legal-footer-nav a:hover { text-decoration: underline; }
